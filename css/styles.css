@@ -1,0 +1,230 @@
+:root {
+    /*Colors*/
+    --acent-color:#2196F3;
+    --main-light-cl:#FFFFFF;
+    --main-dark-cl: #2F303A;
+
+    /*Text*/
+    --txt-cl: #212121;
+    --txt-light-cl: #757575;
+
+    /*Other*/
+    --shadow-style:0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+body {
+    font-family: 'Roboto', 'Raleway', sans-serif;
+    color: var(--txt-cl);
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style-type: none;
+}
+
+.btn {
+    filter: none;
+    border: none;
+}
+
+/*Header navigations*/
+.navigation-studio, .navigation-portfolio, .navigation-contacts {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--txt-cl);
+}
+
+.navigation-studio:hover, .navigation-portfolio:hover, .navigation-contacts:hover,
+.navigation-studio:focus, .navigation-portfolio:focus, .navigation-contacts:focus {
+    color: var(--acent-color);
+    text-shadow: var(--shadow-style);
+}
+
+.navigation-current {
+    color: var(--acent-color);
+}
+
+/*Header contacts*/
+.item-email, .item-phone {
+    top: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--txt-light-cl);
+    font-style: normal;
+}
+
+.item-email:hover, .item-phone:hover,
+.item-email:focus, .item-phone:focus {
+    color: var(--acent-color);
+}
+
+/*Header*/
+.header-logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--txt-cl);
+}
+
+.logo-span {
+    color: var(--acent-color);
+}
+
+/*Hero*/
+.hero {
+    background-color: var(--main-dark-cl);
+    
+}
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--main-light-cl);
+}
+
+.hero-btn {
+    color: var(--main-light-cl);
+    background-color: var(--acent-color);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+}
+
+.hero-btn:hover
+.hero-btn:focus {
+    background-color: #188CE8;
+}
+
+/*Benefits*/
+.benefits-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;   
+}
+
+.benefits-txt {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;  
+    color: var(--txt-light-cl);
+}
+
+/*Service*/
+.service-title, .team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+/*Team*/
+.team {
+    background-color: #F5F4FA;
+}
+
+.teammade {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.teammade-position {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--txt-light-cl);
+    
+}
+
+/*Footer*/
+.footer {
+    background-color: var(--main-dark-cl);
+}
+
+.footer-logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.38;
+    letter-spacing: 0.03em;
+    color: var(--main-light-cl);
+    text-align: center;
+}
+
+.footer-link-adress {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--main-light-cl);
+    font-style: normal;
+}
+
+.footer-link {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+}
+
+.footer-link:hover, .footer-link-adress:hover,
+.footer-link:focus, .footer-link-adress:focus {
+    color: var(--acent-color);
+}
+
+/*Projects*/
+.filter-btn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    background-color: #F5F4FA;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+    color: var(--main-light-cl);
+    background-color: var(--acent-color);
+    filter: var(--shadow-style);
+    cursor: pointer;
+}
+
+.filter-btn.current {
+    color: var(--main-light-cl);
+    background-color: var(--acent-color);
+}
+
+.projects-title {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.projects-txt {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.03em;
+    color: var(--txt-light-cl);
+}
