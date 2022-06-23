@@ -15,6 +15,7 @@
 body {
   font-family: "Roboto", "Raleway", sans-serif;
   color: var(--txt-cl);
+  margin: 0;
 }
 
 h1,
@@ -79,6 +80,11 @@ ul {
 .navigation-list {
   display: flex;
 }
+
+.navigation-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .navigation-studio,
 .navigation-portfolio,
 .navigation-contacts,
@@ -90,9 +96,7 @@ ul {
   color: var(--txt-cl);
 
   display: block;
-  margin-right: 50px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 32px 0;
 }
 
 .navigation-studio:hover,
@@ -115,6 +119,10 @@ ul {
   margin-left: auto;
 }
 
+.contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .item-email,
 .item-phone {
   top: 32px;
@@ -124,10 +132,9 @@ ul {
   letter-spacing: 0.02em;
   color: var(--txt-light-cl);
   font-style: normal;
-}
 
-.item-email {
-  margin-right: 50px;
+  display: block;
+  padding: 32px 0;
 }
 
 .item-email:hover,
@@ -184,11 +191,13 @@ ul {
 }
 
 /*Benefits*/
+.benefits {
+  padding: 94px 0;
+}
+
 .benefits-list {
   display: flex;
   align-content: flex-start;
-  padding-top: 94px;
-  flex-direction: row;
 }
 
 .benefits-item {
@@ -217,6 +226,10 @@ ul {
 }
 
 /*Service*/
+.service {
+  padding-bottom: 94px;
+}
+
 .service-title,
 .team-title {
   font-weight: 700;
@@ -225,8 +238,7 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
 
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .service-list {
@@ -242,12 +254,12 @@ ul {
 /*Team*/
 .team {
   background-color: #f5f4fa;
+  padding: 94px 0;
 }
 
 .team-list {
   display: flex;
   align-items: flex-start;
-  padding-bottom: 94px;
 }
 
 .team-card:not(:last-child) {
@@ -260,15 +272,18 @@ ul {
   border-radius: 0px 0px 4px 4px;
 }
 
+.teammade-description {
+  text-align: center;
+  padding: 30px 0;
+}
+
 .teammade {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 
-  margin-top: 30px;
   margin-bottom: 10px;
-  text-align: center;
 }
 
 .teammade-position {
@@ -277,9 +292,6 @@ ul {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--txt-light-cl);
-
-  margin-bottom: 30px;
-  text-align: center;
 }
 
 /*Footer*/
@@ -337,19 +349,17 @@ ul {
 }
 
 /*Projects filter*/
+.projects {
+  padding: 94px 0;
+}
+
 .filter-list {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
-  padding-bottom: 50px;
 }
 
 .filter-item:not(:last-child) {
   margin-right: 8px;
-}
-
-.filter-item.last {
-  margin-left: 119px;
 }
 
 .filter-btn {
@@ -381,7 +391,11 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-bottom: 94px;
+  padding: 94px 0;
+}
+
+.project-description {
+  padding: 20px 24px;
 }
 
 .projects-title {
@@ -390,7 +404,7 @@ ul {
   letter-spacing: 0.06em;
   color: var(--txt-cl);
 
-  margin: 20px 24px 4px 24px;
+  margin-bottom: 4px;
 }
 
 .projects-txt {
@@ -399,8 +413,6 @@ ul {
   line-height: 1.86;
   letter-spacing: 0.03em;
   color: var(--txt-light-cl);
-
-  margin: 0px 24px 20px 24px;
 }
 
 .projects-card {
