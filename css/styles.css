@@ -357,6 +357,7 @@ ul {
 .filter-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .filter-item:not(:last-child) {
@@ -392,7 +393,6 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 50px;
 }
 
 .project-description {
